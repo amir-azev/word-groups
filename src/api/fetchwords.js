@@ -15,7 +15,7 @@ export const fetchWords = async (description, limit) => {
         const completion = await openai.chat.completions.create({
             model: "gpt-4o-mini", // Ensure the correct model name is used (gpt-4 is valid)
             messages: [
-                { role: "system", content: "You are a helpful assistant." },
+                { role: "system", content: "You output a list of words separated by commas" },
                 {
                     role: "user",
                     content: `Respond with only a list of words based on this description: "${description}". Do not list more than ${limit} words, you can list less`
