@@ -9,7 +9,7 @@ import {
     DialogTitle,
     DialogDescription,
     DialogClose
-} from "@/components/ui/dialog" // Importing shadcn dialog components
+} from "@/components/ui/dialog"
 import { Info } from "lucide-react"
 
 const Rules = ({

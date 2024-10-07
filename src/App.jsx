@@ -13,7 +13,7 @@ const App = () => {
   const [rules, setRules] = useState([])
   const [matchString, setMatchString] = useState("")
   const [label, setLabel] = useState("")
-  const [color, setColor] = useState("#000000") // Default color is black
+  const [color, setColor] = useState("#77a8f7") // Default color is black
 
   // Sample data
   const sampleWords = [
