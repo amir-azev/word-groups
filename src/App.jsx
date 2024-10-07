@@ -13,7 +13,7 @@ const App = () => {
   const [rules, setRules] = useState([])
   const [matchString, setMatchString] = useState("")
   const [label, setLabel] = useState("")
-  const [color, setColor] = useState("#77a8f7") // Default color is black
+  const [color, setColor] = useState("#77a8f7") 
 
   // Sample data
   const sampleWords = [
@@ -69,7 +69,7 @@ const App = () => {
     setRules([...rules, { match: matchString, label, color }])
     setMatchString("")
     setLabel("")
-    setColor("#000000") // Reset to default color
+    setColor("#77a8f7") // Reset to default color
   }
 
   const handleUpdateRuleColor = (index, newColor) => {
@@ -111,7 +111,6 @@ const App = () => {
             rules={rules}
             handleAddRule={handleAddRule}
             handleUpdateRuleColor={handleUpdateRuleColor}
-            // Pass delete function here
             handleDeleteRule={handleDeleteRule}
           />
         </div>
