@@ -87,7 +87,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center w-screen bg-gray-100">
-      <div className="container mx-auto p-4 bg-white rounded-lg shadow-lg">
+      <div className="container mx-auto p-4 bg-white rounded-lg shadow-lg w-4/5 my-5">
         <h1 className="text-2xl font-bold mb-8 text-center">
           Word Fetch and Analyser
         </h1>
