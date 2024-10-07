@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { fetchWords } from "./api/fetchWords"
+import { fetchWords } from "./api/fetchwords.js"
 import WordFetcher from "./WordFetcher"
 import Rules from "./Rules"
 import WordList from "./WordList"
