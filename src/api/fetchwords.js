@@ -26,8 +26,12 @@ export const fetchWords = async (description, limit) => {
         // Extract the text response from the completion object
         const responseText = completion.choices[0].message.content
 
+
         // Split the response into an array of words
-        return responseText.split(",").filter(word => word.trim() !== ".")
+        return responseText.split(",")
+            .map(word => word.trim().replace(/\s+/g, ""))
+            .filter(word => word !== ".")
+        // return responseText.split(",").filter(word => word.trim() !== ".")
     } catch (error) {
         console.error("Error fetching words:", error)
         throw error // You can also handle the error differently based on your app needs
